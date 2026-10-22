@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#241b1b" />
+    <meta
+      name="description"
+      content="Natural Beauty Spot by Darshana Mirashi Sawant, hair and makeup artist in Mumbai."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Natural Beauty Spot</title>
+  </head>
+  <body>
+    <div class="announcement">
+      NATURAL BEAUTY SPOT ✦ HAIR & MAKEUP ARTISTRY IN MUMBAI
+    </div>
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"
+          ><img
+            class="logo"
+            data-image="logo"
+            alt="Natural Beauty Spot logo"
+          /><span class="brand-name" data-business
+            >Natural Beauty Spot<small>BY DARSHANA MIRASHI SAWANT</small></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a><a href="gallery.html">Gallery</a
+          ><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a
+          ><a class="btn btn-dark nav-cta" href="contact.html#booking"
+            >Book appointment ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-image" id="hero-image"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow light">NATURAL BEAUTY SPOT · MUMBAI</p>
+            <h1>Beauty that feels <em>like you.</em></h1>
+            <p class="hero-desc" data-intro></p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="contact.html#booking"
+                >Book your visit ↗</a
+              ><a class="text-link" href="services.html">Explore services ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container feature-grid">
+          <div>✧ &nbsp; Bridal artistry</div>
+          <div>✦ &nbsp; Hair styling</div>
+          <div>♡ &nbsp; Occasion makeup</div>
+          <div>✳ &nbsp; Personal consultations</div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">01 / SIGNATURE SERVICES</p>
+              <h2>Made for your <em>moment.</em></h2>
+            </div>
+            <a class="underlined-link" href="services.html">All services ↗</a>
+          </div>
+          <div id="service-cards" class="cards"></div>
+        </div>
+      </section>
+      <section class="section section-tint">
+        <div class="container split">
+          <img
+            class=""
+            data-image="studio"
+            alt="Beauty studio illustration"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">02 / MEET YOUR ARTIST</p>
+            <h2>Thoughtful beauty, <em>personal artistry.</em></h2>
+            <p data-about></p>
+            <a class="underlined-link" href="about.html"
+              >Discover the story ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">03 / BEHIND THE ART</p>
+              <h2>The details <em>matter.</em></h2>
+            </div>
+            <a class="underlined-link" href="gallery.html#behind-scenes"
+              >See more ↗</a
+            >
+          </div>
+          <div id="bts-cards" class="cards"></div>
+        </div>
+      </section>
+      <section class="section section-tint">
+        <div class="container">
+          <p class="eyebrow">04 / KIND WORDS</p>
+          <h2>From our <em>clients.</em></h2>
+          <div class="review-carousel" aria-label="Client reviews carousel">
+            <div class="review-viewport" id="review-viewport">
+              <div class="review-track" id="review-track"></div>
+            </div>
+            <div class="review-controls">
+              <button
+                id="review-prev"
+                type="button"
+                aria-label="Previous review"
+              >
+                ←</button
+              ><span id="review-status" aria-live="polite"></span
+              ><button id="review-next" type="button" aria-label="Next review">
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta-band">
+        <div class="container">
+          <h2>Your next beautiful moment starts here.</h2>
+          <a class="btn btn-gold" href="contact.html#booking"
+            >Book on WhatsApp ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand" href="index.html"
+          ><img
+            class="logo"
+            data-image="logo"
+            alt="Natural Beauty Spot logo"
+          /><span class="brand-name" data-business>Natural Beauty Spot</span></a
+        >
+        <p>Artistry by <span data-artist></span></p>
+        <div class="socials">
+          <a data-social="instagram" aria-label="Instagram">Instagram ↗</a
+          ><a data-social="whatsapp" aria-label="WhatsApp">WhatsApp ↗</a
+          ><a data-social="facebook" aria-label="Facebook">Facebook ↗</a
+          ><a data-social="twitter" aria-label="X / Twitter">X ↗</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span id="copyright"></span><span>Beautifully you. Always.</span>
+      </div>
+    </footer>
+    <a class="float-wa" data-social="whatsapp" aria-label="Chat on WhatsApp"
+      >✆ <span>WhatsApp</span></a
+    >
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#241b1b" />
+    <meta
+      name="description"
+      content="Natural Beauty Spot by Darshana Mirashi Sawant, hair and makeup artist in Mumbai."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Natural Beauty Spot</title>
+  </head>
+  <body>
+    <div class="announcement">
+      NATURAL BEAUTY SPOT ✦ HAIR & MAKEUP ARTISTRY IN MUMBAI
+    </div>
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"
+          ><img
+            class="logo"
+            data-image="logo"
+            alt="Natural Beauty Spot logo"
+          /><span class="brand-name" data-business
+            >Natural Beauty Spot<small>BY DARSHANA MIRASHI SAWANT</small></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a><a href="gallery.html">Gallery</a
+          ><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a
+          ><a class="btn btn-dark nav-cta" href="contact.html#booking"
+            >Book appointment ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-heading">
+        <div class="container">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h1>Let’s create your look.</h1>
+          <p>
+            Enquire about salon services, hairstyling, bridal and occasion
+            makeup.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="booking">
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow">CONTACT THE ARTIST</p>
+            <h2>Darshana Mirashi <em>Sawant.</em></h2>
+            <p>Natural Beauty Spot · Mumbai, India</p>
+            <p><strong>Phone / WhatsApp:</strong> <a id="phone-link"></a></p>
+            <p>
+              <strong>Instagram:</strong>
+              <a data-social="instagram">@natural_spot_mua ↗</a>
+            </p>
+            <p>
+              For bridal and occasion enquiries, please include the event date
+              and preferred location.
+            </p>
+            <img
+              class="contact-art"
+              data-image="bridal"
+              alt="Bridal makeup illustration"
+              loading="lazy"
+            />
+          </div>
+          <form id="booking-form" class="booking-form">
+            <h2>Request an appointment</h2>
+            <p>
+              We will prepare your details in WhatsApp. Appointment confirmation
+              comes from the artist.
+            </p>
+            <label for="client-name">Your name</label
+            ><input
+              id="client-name"
+              name="name"
+              required
+              maxlength="80"
+              placeholder="Full name"
+            /><label for="client-phone">Phone number</label
+            ><input
+              id="client-phone"
+              name="phone"
+              type="tel"
+              required
+              minlength="8"
+              maxlength="18"
+              placeholder="Contact number"
+            /><label for="client-service">Service</label
+            ><select id="client-service" name="service" required>
+              <option value="">Select service</option>
+            </select>
+            <div class="form-row">
+              <div>
+                <label for="client-date">Preferred date</label
+                ><input id="client-date" name="date" type="date" required />
+              </div>
+              <div>
+                <label for="client-time">Preferred time</label
+                ><input id="client-time" name="time" type="time" required />
+              </div>
+            </div>
+            <label for="client-note">Your look / event details</label
+            ><textarea
+              id="client-note"
+              name="note"
+              rows="4"
+              placeholder="Occasion, preferences, location, etc."
+            ></textarea
+            ><button class="btn btn-dark" type="submit">
+              Continue to WhatsApp ↗
+            </button>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand" href="index.html"
+          ><img
+            class="logo"
+            data-image="logo"
+            alt="Natural Beauty Spot logo"
+          /><span class="brand-name" data-business>Natural Beauty Spot</span></a
+        >
+        <p>Artistry by <span data-artist></span></p>
+        <div class="socials">
+          <a data-social="instagram" aria-label="Instagram">Instagram ↗</a
+          ><a data-social="whatsapp" aria-label="WhatsApp">WhatsApp ↗</a
+          ><a data-social="facebook" aria-label="Facebook">Facebook ↗</a
+          ><a data-social="twitter" aria-label="X / Twitter">X ↗</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span id="copyright"></span><span>Beautifully you. Always.</span>
+      </div>
+    </footer>
+    <a class="float-wa" data-social="whatsapp" aria-label="Chat on WhatsApp"
+      >✆ <span>WhatsApp</span></a
+    >
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

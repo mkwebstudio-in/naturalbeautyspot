@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#241b1b" />
+    <meta
+      name="description"
+      content="Natural Beauty Spot by Darshana Mirashi Sawant, hair and makeup artist in Mumbai."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Natural Beauty Spot</title>
+  </head>
+  <body>
+    <div class="announcement">
+      NATURAL BEAUTY SPOT ✦ HAIR & MAKEUP ARTISTRY IN MUMBAI
+    </div>
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"
+          ><img
+            class="logo"
+            data-image="logo"
+            alt="Natural Beauty Spot logo"
+          /><span class="brand-name" data-business
+            >Natural Beauty Spot<small>BY DARSHANA MIRASHI SAWANT</small></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a><a href="gallery.html">Gallery</a
+          ><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a
+          ><a class="btn btn-dark nav-cta" href="contact.html#booking"
+            >Book appointment ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-heading">
+        <div class="container">
+          <p class="eyebrow">CLIENT STORIES</p>
+          <h1>Kind words.</h1>
+          <p>
+            An automatically moving carousel, with controls to explore each
+            review.
+          </p>
+        </div>
+      </section>
+      <section class="section section-tint">
+        <div class="container">
+          <div class="review-carousel" aria-label="Client reviews carousel">
+            <div class="review-viewport" id="review-viewport">
+              <div class="review-track" id="review-track"></div>
+            </div>
+            <div class="review-controls">
+              <button
+                id="review-prev"
+                type="button"
+                aria-label="Previous review"
+              >
+                ←</button
+              ><span id="review-status" aria-live="polite"></span
+              ><button id="review-next" type="button" aria-label="Next review">
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand" href="index.html"
+          ><img
+            class="logo"
+            data-image="logo"
+            alt="Natural Beauty Spot logo"
+          /><span class="brand-name" data-business>Natural Beauty Spot</span></a
+        >
+        <p>Artistry by <span data-artist></span></p>
+        <div class="socials">
+          <a data-social="instagram" aria-label="Instagram">Instagram ↗</a
+          ><a data-social="whatsapp" aria-label="WhatsApp">WhatsApp ↗</a
+          ><a data-social="facebook" aria-label="Facebook">Facebook ↗</a
+          ><a data-social="twitter" aria-label="X / Twitter">X ↗</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span id="copyright"></span><span>Beautifully you. Always.</span>
+      </div>
+    </footer>
+    <a class="float-wa" data-social="whatsapp" aria-label="Chat on WhatsApp"
+      >✆ <span>WhatsApp</span></a
+    >
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
